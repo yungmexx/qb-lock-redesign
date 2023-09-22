@@ -142,9 +142,12 @@ function startGame(time){
     $('.unlock').hide(); // Hide the unlock element
     $('.spacebar-wrapper').hide(); // Hide the spacebar-wrapper element
     $('#canvas').show();
+    
+    // Reset bgcolor2 to its original color
+    bgcolor2 = originalBgColor2;
+    
     draw(time);
 }
-
 
 function endGame(status) {
     var xhr = new XMLHttpRequest();
