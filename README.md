@@ -2,7 +2,7 @@
 
 https://streamable.com/fxjwpf
 
-![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/fe5d137e-e396-4dee-9285-a632e77df299)
+[![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/fe5d137e-e396-4dee-9285-a632e77df299)](https://forum.cfx.re/uploads/default/original/4X/3/e/0/3e0d6d7682bedee5ae9381c335df50fdb8b34225.jpeg)
 ![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/ac118526-3366-4e74-815f-265fd8bddd42)
 ![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/9a6aeb1a-3a93-4e1a-b813-29fa44922832)
 
