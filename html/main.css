@@ -1,0 +1,100 @@
+body{
+    background-color:transparent;
+}
+
+#canvas {
+    position: absolute;
+    margin: 50px auto;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: visible;
+    height: 185px;
+    width: 185px;
+    color:#822ff6
+}
+
+.spacebar-wrapper {
+    opacity: 0;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.spacebar {
+    width: 8.0vh;
+    height: 8.0vh;
+    left: 56.0%;
+
+}
+
+
+.triangle {
+    border-left: 1.8vh solid transparent; /* Adjust the size of the triangle */
+    border-right: 1.8vh solid transparent;
+    border-top: 1.5vh solid rgb(240, 239, 239); /* Use the same color as the circle border */
+    position: fixed;
+    top: 23%; /* Center vertically */
+    left: 28%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center the triangle */
+    animation: bounce 0.4s ease infinite alternate; /* Apply the bounce animation */
+}
+
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    100% {
+        transform: translateY(-15px); /* Bounce up */
+    }
+}
+
+
+
+.lock {
+    opacity: 0;
+    position: absolute;
+    top: 51.2%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
+    font-size: 48px; /* Adjust the font size as needed */
+    color: #ffffff; /* Set to white */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: font-size 0.8s;
+    animation: wiggle 0.4s ease infinite alternate; /* Apply the bounce animation */
+}
+
+
+
+.unlock {
+    opacity: 0;
+    position: absolute;
+    top: 51.2%;
+    left: 48.8%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
+    font-size: 48px; /* Adjust the font size as needed */
+    color: #ffffff; /* Set to white */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: font-size 0.8s;
+    animation: wiggle 0.4s ease infinite alternate; /* Apply the bounce animation */
+}
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
