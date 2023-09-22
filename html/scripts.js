@@ -14,7 +14,7 @@ let g_start, g_end;
 let animation_loop;
 
 
-
+let gameEndTimeout; // Declare the global variable
 
 
 let originalBgColor2 = bgcolor2; // Store the original bgcolor2 value
@@ -137,10 +137,15 @@ document.addEventListener("keydown", function(ev) {
 
 
 function startGame(time){
+    clearTimeout(gameEndTimeout); // Clear the previous timeout
+    $('.lock').hide(); // Hide the lock element
+    $('.unlock').hide(); // Hide the unlock element
+    $('.spacebar-wrapper').hide(); // Hide the spacebar-wrapper element
     $('#canvas').show();
     draw(time);
-  }
-  
+}
+
+
 function endGame(status) {
     var xhr = new XMLHttpRequest();
     let u = "fail";
@@ -153,7 +158,8 @@ function endGame(status) {
     streak = 0;
     needed = 4;
 
-    setTimeout(function () {
+    // Set a timeout and assign it to the global variable
+    gameEndTimeout = setTimeout(function () {
         $('.spacebar-wrapper').hide();
         $('.lock').hide();
         $('.unlock').hide();
@@ -180,10 +186,10 @@ function endGame(status) {
         }
 		console.log(event.data.time)
 
+        startGame(time)
         $('#canvas').show();
         $('.spacebar-wrapper').css('opacity', '100%');
         $('.spacebar-wrapper').show();
-        startGame(time)
 
     }
   })
