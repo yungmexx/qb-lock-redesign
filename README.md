@@ -1,6 +1,7 @@
 # qb-lock
 
 https://streamable.com/fxjwpf
+![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/841a524b-f5b3-4509-bb5f-b02364b8b0f2)
 
 # Template
 ```lua
