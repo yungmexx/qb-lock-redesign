@@ -1,7 +1,4 @@
-# qb-lockpick
- NoPixel Based Lockpick for QBFramework
- all credits go to Nathan#8860, i only did the UI change
- Nathan's github: https://github.com/NathanERP
+# qb-lock
 
 
 # Template
@@ -27,9 +24,6 @@ end)
 
 ```
 
-# Amount of time to spin and amount of time to trigger are currently held within the js I am trying to export it to lua
-# Amount and Time now work, but functioning success now doesn't go over to the export.
-# Fixed the Lockpick now ready for use, enjoy!
 
 ## Useful Snippet
 for everyone here that wants to add the minigame to other script in a very simple way
