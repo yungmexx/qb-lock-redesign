@@ -2,8 +2,8 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local Result = nil
 local NUI_status = false
 
-local UseAudio = true
-local debug = false
+local UseInteractSound = true
+local debug = true
 
 RegisterNetEvent('kwk-lockpick:client:openLockpick', function(callback, circles)
     lockpickCallback = callback
@@ -39,6 +39,11 @@ RegisterNUICallback('fail', function()
     if debug then
         print('fail')
      end
+     if UseInteractSound then
+        TriggerServerEvent("InteractSound_SV:PlayOnSource", 'lockpickfail', 1.0)
+    else
+        PlaySoundFrontend(-1, "CANCEL", "HUD_MINI_GAME_SOUNDSET", 1 )
+    end
 end)
 
 RegisterNUICallback('success', function()
@@ -49,8 +54,10 @@ RegisterNUICallback('success', function()
     if debug then
         print(Result)
      end
-    if UseAudio then
+    if UseInteractSound then
         TriggerServerEvent("InteractSound_SV:PlayOnSource", 'lockpicksuccess', 1.5)
+    else
+        PlaySoundFrontend(-1, "select", "HUD_MINI_GAME_SOUNDSET", 1 )
     end
     return Result
 end)
