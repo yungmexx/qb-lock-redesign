@@ -7,6 +7,9 @@ https://streamable.com/fxjwpf
 ![image](https://github.com/yungmexx/qb-lock-redesign/assets/113365369/9a6aeb1a-3a93-4e1a-b813-29fa44922832)
 
 
+cfx post: https://forum.cfx.re/t/qb-lock-reseign/5171106
+
+
 # Template
 ```lua
 
