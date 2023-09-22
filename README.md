@@ -1,5 +1,6 @@
 # qb-lock
 
+https://streamable.com/fxjwpf
 
 # Template
 ```lua
