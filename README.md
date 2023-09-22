@@ -2,4 +2,6 @@
 
 
 
+
+EXPORT:
 exports['qb-lock']:StartLockPickCircle(amount, time, function(success)
