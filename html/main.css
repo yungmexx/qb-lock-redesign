@@ -15,7 +15,6 @@ body{
 }
 
 .spacebar-wrapper {
-    opacity: 0;
     position: absolute;
     top: 56%;
     left: 50%;
@@ -57,10 +56,9 @@ body{
 
 
 .lock {
-    opacity: 0;
     position: absolute;
     top: 51.8%;
-    left: 49%;
+    left: 49.0%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
@@ -75,10 +73,9 @@ body{
 
 
 .unlock {
-    opacity: 0;
     position: absolute;
-    top: 51.8%;
-    left: 48.8%;
+    top: 51.9%;
+    left: 48.5%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
