@@ -96,6 +96,10 @@ function correct() {
         init();
 
         endGame(true);
+
+        $('.spacebar-wrapper').hide();
+        $('.unlock').css('opacity', '100%');
+        $('.unlock').show();
     } else {
         draw(time);
     }
@@ -107,6 +111,12 @@ function wrong() {
     init();
 
     clearInterval(animation_loop);
+
+    $('.spacebar-wrapper').hide();
+    // Show the lock icon using jQuery
+    $('.lock').css('opacity', '100%');
+    $('.lock').show();
+
     endGame(false);
 }
 
